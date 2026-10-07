@@ -48,9 +48,9 @@ export default function App() {
                     </p>
 
                     <p className="mb-[30px] max-w-[30em] text-soft dark:text-tan mt-10">
-                        I'm building Waymate
-                        in public, starting with people studying for the CFA exam. There's no app yet, so
-                        follow along.
+                        Waymate is being built in public. I'll share everything I think is worth sharing with other
+                        developers and entrepreneurs, as a series called Waymate -Startup series-. The technical side goes on X. Decisions about marketing,
+                        management, design, and the bigger picture go on LinkedIn.
                     </p>
 
                     <div className="flex flex-wrap gap-3.5">
@@ -58,13 +58,13 @@ export default function App() {
                             <b className="font-display text-[1.45rem] leading-[1.2] font-bold tracking-[-0.01em]">
                                 LinkedIn
                             </b>
-                            <span className="text-[0.95rem] opacity-95">Decisions, design, and the data</span>
+                            <span className="text-[0.95rem] opacity-95">Marketing, management, design, etc.</span>
                         </a>
                         <a className={btn} href={LINKS.x} target="_blank" rel="me noopener noreferrer">
                             <b className="font-display text-[1.45rem] leading-[1.2] font-bold tracking-[-0.01em]">
                                 X
                             </b>
-                            <span className="text-[0.95rem] opacity-95">The technical build, as it happens</span>
+                            <span className="text-[0.95rem] opacity-95">The technical build, as it happens.</span>
                         </a>
                     </div>
 
