@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Waymate brand tokens: see claude/waymate-brand-design-system.md */
+@theme {
+    --color-sunrise: #ffa030;
+    --color-ember: #e5460c;
+    --color-cream: #fcf1e0;
+    --color-ink: #3b2314;
+    --color-soft: #7a5e49;
+    --color-sand: #e8d5ba;
+    --color-espresso: #1d1109;
+    --color-warm: #fbeedb;
+    --color-tan: #c4a68c;
+    --color-cocoa: #3d2616;
+
+    --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+    --font-body: 'Figtree Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+    --animate-land: land 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    @keyframes land {
+        from {
+            opacity: 0;
+            transform: translateY(28px) rotate(-7deg) scale(0.94);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+}
+
+@layer base {
+    html {
+        height: 100%;
+    }
+    body {
+        @apply min-h-full overflow-x-hidden bg-cream font-body text-lg leading-[1.55] text-ink antialiased dark:bg-espresso dark:text-warm;
+    }
+    a:focus-visible {
+        outline: 3px solid var(--color-ember);
+        outline-offset: 4px;
+        border-radius: 6px;
+    }
+    @media (prefers-color-scheme: dark) {
+        a:focus-visible {
+            outline-color: var(--color-sunrise);
+        }
+    }
+}
